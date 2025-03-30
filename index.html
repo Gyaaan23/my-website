@@ -7,8 +7,73 @@
 
     <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header Section */
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1B1F60;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            height: 60px;
+        }
+
+        /* Navigation Styling */
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .main-nav ul li {
+            margin: 0 15px;
+        }
+
+        .main-nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .main-nav ul li a:hover {
+            color: #FFA500;
+        }
+
+        /* Ensure page content doesn't hide behind fixed navbar */
+        body {
+            padding-top: 80px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header with Logo and Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="logo.png" alt="Akshardhara Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero Section with Background -->
     <section class="hero-section">
@@ -18,20 +83,6 @@
             <p>Custom solutions to enhance learning outcomes</p>
         </div>
     </section>
-
-    <!-- Header -->
-    <header>
-        <h1>Welcome to Akshardhara</h1>
-        <p>Innovative Curriculum Development for Schools & Educational Institutions</p>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <!-- About Section -->
     <div id="about" class="section">
